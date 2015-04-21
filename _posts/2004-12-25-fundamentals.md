@@ -51,7 +51,7 @@ For sequential data, a monochromatic color scheme is a good choice. In this type
 of scheme you have just one hue, and vary the lightness. Your colors may go from
 light blue to dark blue, for example. This scheme is ideal for a choropleth map.
 
-![Monochromatic]({{site.baseurl}}{{ASSET_PATH}}/images/monochrome.png)
+![Monochromatic]({{BASE_PATH}}{{ASSET_PATH}}/images/monochrome.png)
 
 ColorBrewer also provides color schemes for sequential data with related
 hues that vary in lightness. These are harder to create on your own, since
@@ -66,21 +66,21 @@ in between them you can use a neutral color, like white. As you go from the
 neutral middle towards the extremes, you can increase the saturation or darkness
 of your two colors.
 
-![Diverging]({{site.baseurl}}{{ASSET_PATH}}/images/diverge.png)
+![Diverging]({{BASE_PATH}}{{ASSET_PATH}}/images/diverge.png)
 
 Qualitative Data
 For this type of data, you don't want your hues to be related to each other,
 because each color is just a category, without representing any order
 or degree in your data.
 
-![Qualitative]({{site.baseurl}}{{ASSET_PATH}}/images/qualitative.png)
+![Qualitative]({{BASE_PATH}}{{ASSET_PATH}}/images/qualitative.png)
 
 A classic example of this type of color scheme is on geologic maps, where each
 color is a different rock unit.
 
 Tools like [paletton.com](http://paletton.com/) are simply a color wheel. Paletton.com has options such as monochromatic, adjacent colors, triad, and tetrad that pick colors based on a single color selection. These are meant for web designing but can be useful for maps, as well.
 
-<a href="http://paletton.com" target="_blank" alt="Spatial Data Carpentry: Paletton.com color wheel">![Spatial Data Carpentry: Paletton.com color wheel]({{site.baseurl}}{{ASSET_PATH}}/images/paletton.jpg)</a>
+<a href="http://paletton.com" target="_blank" alt="Spatial Data Carpentry: Paletton.com color wheel">![Spatial Data Carpentry: Paletton.com color wheel]({{BASE_PATH}}{{ASSET_PATH}}/images/paletton.jpg)</a>
 
 <!--"_"--->
 
