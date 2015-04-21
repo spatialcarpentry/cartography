@@ -8,6 +8,7 @@ tagline: Supporting tagline
 ## Goals/Objectives
 
 After finishing this lesson, you will be able to:
+
   - recognize the basic elements of a map
   - understand the purpose of color in cartography
   - create a map layout in QGIS
