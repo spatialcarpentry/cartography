@@ -18,7 +18,7 @@ After finishing this lesson, you will be able to:
 
 <ul class="posts">
   {% for post in site.posts %}
-    <li><a href="{{ site.baseurl }}{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+    <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
