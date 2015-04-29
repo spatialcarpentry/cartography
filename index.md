@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cartography
-tagline: Supporting tagline
+tagline: 
 ---
 {% include JB/setup %}
 
