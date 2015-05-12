@@ -8,22 +8,30 @@ tagline: "making print-based maps"
 
 {% include JB/setup %}
 
-# Exercise
+#### Pre-requisites:
 
-## Objectives
+1. one
+2. two
+3. three
 
-* Create a print-based (static, non-interactive) map in QGIS.
+#### Objectives:
+
+- Create a print-based (static, non-interactive) map in QGIS.
+- two
+- three
+
+#### Data:
+
+iPlant Data Store: <br>&nbsp;&nbsp;&nbsp;``Community Data/Spatial-bootcamp/cartography/compose-a-map/``
+
+- [geo_coded.tif](link-to-geo-coded)
+- [dem-washington.tif](link-to-dem)
 
 ----
 
 ## Procedures
 
 Create map of Washington rock strength
-
-Layers needs:
-
- * geo_coded.tif
- * dem-washington.tif
 
  ![Spatial Data Carpentry: Show your Results in QGIS]({{BASE_PATH}}{{ASSET_PATH}}/images/carto-1.png)
 
