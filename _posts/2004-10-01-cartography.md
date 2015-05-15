@@ -22,7 +22,7 @@ tagline: "making print-based maps"
 
 #### Data:
 
-iPlant Data Store: <br>&nbsp;&nbsp;&nbsp;``Community Data/Spatial-bootcamp/cartography/compose-a-map/``
+iRods access: <br>&nbsp;&nbsp;&nbsp;``/iplant/home/shared/Spatial-bootcamp/cartography/compose-a-map/``
 
 - [geo_coded.tif](link-to-geo-coded)
 - [dem-washington.tif](link-to-dem)
