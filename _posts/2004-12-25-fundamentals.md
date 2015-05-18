@@ -8,6 +8,17 @@ tags : [cartography, map design, colorbewer]
 
 {% include JB/setup %}
 
+## Elements of effective cartography
+
+To help your audience understand what you're trying to convey,
+the following elements can be included with your map.
+
+* Legend - The most important element for understanding the data, the legend should concisely explain what is on the map.
+* Labels - Labels can help your audience identify features on the map like cities, roads, and lakes, or they can serve to point out important areas.
+* Attribution - An attribution is often necessary when using geographic information, whether it be for the data itself, the map that is underneath the data, or the design elements included.
+* Scale - Although scale is often left out of zoomable web maps, it is an important element for static maps. The scale bar can be simple and near the bottom of your map.
+* North arrow - The classic arrow that points north!
+
 ## Color Theory
 
 Map-making has historically  been both a science and an art. For visualizing scientific data on
@@ -21,18 +32,6 @@ a good map design will make your data more powerful.
 
 In practicing cartography, it is important to remember that often, the best
 design is rooted in simplicity. The main focus should be the information.
-
-## Elements of effective cartography
-
-To help your audience understand what you're trying to convey,
-the following elements can be included with your map.
-
- * Legend - The most important element for understanding the data, the legend should concisely explain what is on the map.
- * Labels - Labels can help your audience identify features on the map like cities, roads, and lakes, or they can serve to point out important areas.
- * Attribution - An attribution is often necessary when using geographic information, whether it be for the data itself,
- the map that is underneath the data, or the design elements included.
- * Scale - Although scale is often left out of zoomable web maps, it is an important element for static maps. The scale bar can be simple and near the bottom of your map.
- * North arrow - The classic arrow that points north!
 
 ## Color
 
@@ -82,7 +81,7 @@ Tools like [paletton.com](http://paletton.com/) are simply a color wheel. Palett
 
 <a href="http://paletton.com" target="_blank" alt="Spatial Data Bootcamp: Paletton.com color wheel">![Spatial Data Bootcamp: Paletton.com color wheel]({{BASE_PATH}}{{ASSET_PATH}}/images/paletton.jpg)</a>
 
-<!--"_"--->
+<!--"_"-->
 
 ## Typography
 
@@ -128,7 +127,7 @@ On the right of your new map project you can see a space with some css code alre
 there. This is what goes in your style file when you save your project. To see
 the changes that you make here, remember to click 'Save' at the top right.
 
-
+----
 
 References
 
