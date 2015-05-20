@@ -10,82 +10,88 @@ tagline: "making print-based maps"
 
 #### Pre-requisites:
 
-1. one
-2. two
-3. three
+1. Spatial Analysis
 
-#### Objectives:
+#### Objective:
 
 - Create a print-based (static, non-interactive) map in QGIS.
-- two
-- three
 
+#### Exercise: Map composition
+
+<!--
 #### Data:
 
 iRods access: <br>&nbsp;&nbsp;&nbsp;``/iplant/home/shared/Spatial-bootcamp/cartography/compose-a-map``
 
 - [geo_coded.tif](link-to-geo-coded)
 - [dem-washington.tif](link-to-dem)
-
+-->
 ----
 
-## Procedures
+#### Create a map of Washington rock strength in QGIS
 
-Create map of Washington rock strength
+<ol>
+<li>
+Import <b>wa_landslide_suscept.tif</b> and <b>wa_hillshade.tif</b> through on of the following methods:<br><br>
+iRods:<br>&nbsp;&nbsp;&nbsp;<code>/iplant/home/shared/aegis/Spatial-bootcamp/cartography/compose-a-map/wa_landslide_suscept.tif</code><br><br>&nbsp;&nbsp;&nbsp;<code>/iplant/home/shared/aegis/Spatial-bootcamp/cartography/compose-a-map/wa_hillshade.tif</code><br><br>
+Download and <b>Add Raster Layer</b><img src="{{BASE_PATH}}{{ASSET_PATH}}/images/add-raster.png"/>:<br>
+<a href="http://de.iplantcollaborative.org/dl/d/F92F0BD2-59A8-4AA0-9B2D-8A3814E636B4/wa_landslide_suscept.tif">wa_landslide_suscept.tif</a><br>
+<a href="http://de.iplantcollaborative.org/dl/d/7DAE3EB8-C4B1-4A73-89AE-5E0B90F5E74B/wa_hillshade.tif">wa_hillshade.tif</a><br><br>
+These are the same rasters that were created in earlier exercises.<br><br>
+<img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-1.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-1.png"/>
+</li>
+<li>Prepare data for composition:<br>
+We'll start with <b>wa_geo_coded</b>, be sure this layer is moved to the top of the layer list: <em>Click-hold-drag wa_geo_coded (layer list) above wa_hillshade</em>.<br><br>
+<img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-2.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-2.png"/>
+</li>
+<li>Style <b>wa_landslide_suscept</b>:<br>
+<ol>
+<li>Open <b>wa_geo_coded</b> style properties and select <b>Singleband Pseudocolor</b>.</li>
+<li>Import the <b>wa_landslide_suscept.txt</b> color map file from the <b>Landslide exercise</b>. Remember use the <img src="{{BASE_PATH}}{{ASSET_PATH}}/images/add-style.png"/> to import the color map file.<br><br>Or download here: <a href="http://de.iplantcollaborative.org/dl/d/E150205F-323F-4EC0-92CC-B321D7B04101/wa_landslide_suscept.txt">wa_landslide_suscept.txt</a> and import.
+<br><br><img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-3.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-3.png"/>
+<br><br>
+Click APPLY and OK once satisfied with the style.<br><br>
+<img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-4.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-4.png"/>
+</li>
+<li>
+It looks good, but let's make it look better.<br><br>
+Increse <b>transparency</b> of <b>wa_geo_coded</b> by opening the wa_geo_coded properties and selecting the <b>Transparency</b> tab. Increase the <b>Global transparency</b> to 50%:<br><br>
+<img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-5.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-5.png"/><br><br>
+Click APPLY and OK to save changes.<br><br>
+Much better!<br><br>
+</li>
+</ol>
+</li>
+<li>Making the map:<br>
+<ol>
+<li>Open the <b>Print Composer</b>: <em>Menu Bar > Project > New Print Composer</em></li>
+<li>Composing a new map requires a title, enter your title whem prompted.<br><br>
+The Print Composer opens in a new application window, you will still be able to work in your current project while making a map.<br><br></li>
+<li>You must add a map layer for visualizing. The <b>Add Map</b> tool will require you to create a bounding box to fit the map. Adjust the bounding box as needed.<br><br>
+To add a map layer: <em>Menu Bar > Layout > Add Map</em><br><br>
+<img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-6.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-6.png"/>
+</li>
+<li>Explore tools by hovering over the toolbar icon or go to <em>Menu Bar > Layout</em> to see the names of each layout tool.</li>
+<li>Add a legend: <em>Menu Bar > Layout > Add Legend</em><br><br>
+Notice how names and values are not appropriate for a final map. You want to the reader to fully understand what they're reading.<br><br>
+<img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-7.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-7.png"/><br><br>
+Notice the <b>Item Properties</b> tab on the right of the screen. Select an item on the map to activate its properties. Here we are able to make necessary changes such as the legend title, or delete items from the legend.<br><br>
+Design the map to however you'd like. See the map below as a reference.<br><br>
+Just be sure to consider key elements of a map:<br>
+<ol>
+<li>Legend</li>
+<li>Attribution</li>
+<li>Scale</li>
+<li>North arrow</li>
+</ol>
+<img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-8.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/compose-8.png"/>
+</li>
+</ol>
+</li>
+<li>Export map:<br>
+The final step of the process is to export your map to a file, as an Image, PDF, or SVG.<br><br>Decide how you want your map to be shared and select the most appropriate option.<br><br>
+<img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/wa_landslide_suscept.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/wa_landslide_suscept.png"/>
+</li>
+</ol>
 
- ![Spatial Data Bootcamp: Show your Results in QGIS]({{BASE_PATH}}{{ASSET_PATH}}/images/carto-1.png)
-
-#### Prepare data for map
-
-1. Uncheck all layers, less dem-washington and geo_coded
-<!--2. Create hillshade: * <em>Menu Bar > Raster > Analysis > DEM (Terrain models)</em> * Configure input as follows:<br> Notice the Z factor, this will exaggerate elevation and give the map an appearance of greater relief.<br>![Spatial Data Bootcamp: Show your Results in QGIS]({{BASE_PATH}}{{ASSET_PATH}}/images/carto-2.png) -->
-2. Load hillshade-washington.tif
-2. Be sure geo_coded is moved up, or on top of dem-washington:
- * <em>Click-hold-drag geo_coded</em> to the top of the layer list.
- * Uncheck dem-washington layer.<br>
- ![Spatial Data Bootcamp: Show your Results in QGIS]({{BASE_PATH}}{{ASSET_PATH}}/images/carto-3.png)
-3. Style geo_coded with qml-style file:
- * <em>Right-click geo_coded > Properties > Style</em>
- * <em>Load Style... (button at bottom) > Navigate to rock-strength.qml</em>
- * QGIS does not load actual minimum and maximum values by default. This enables faster layer rendering. You'll want to load actual min/max values to visualize the correct data. To load actual min/max values:<br><em>Load min/max values: Min/max<br>Accuracy: Actual (slower)<br>Click Load<br>Click Apply to save changes</em><br>
- ![Spatial Data Bootcamp: Show your Results in QGIS]({{BASE_PATH}}{{ASSET_PATH}}/images/carto-4.png)
- * Increase transparency:<br><em>From within layer Properties > Transparency > Global Transparency > 50%<br>Click Apply, OK to save changes and close Properties</em><br>
- * The product just created visualizes rock strength within Washington state with enhanced effects using hillshade and transparency.
- ![Spatial Data Bootcamp: Show your Results in QGIS]({{BASE_PATH}}{{ASSET_PATH}}/images/carto-5.png)
-
-#### Making the map
-
-1. There are several was to open the **Print Composer**:
- * <em>Menu Bar > Project > New Print Composer</em>
- * Print Composer toolbar icon<br>
- ![Spatial Data Bootcamp: Show your Results in QGIS]({{BASE_PATH}}{{ASSET_PATH}}/images/carto-6.png)
-2. Create title:
- * This new Print Composer project will be saved and can be accessed through the **Composer Manager**.
-3. The Print Composer opens in a new application window, you will still be able to work in your current project while making a map.
-4. You must add a map layer for visualizing. The **Add Map** tool will require you to create a bounding box to fit the map. Adjust the bounding box as needed. To add a map layer:
- * <em>Menu Bar > Layout > Add Map</em> OR
- * **Add new map** toolbar icon:<br>
- ![Spatial Data Bootcamp: Show your Results in QGIS]({{BASE_PATH}}{{ASSET_PATH}}/images/carto-7.png)
- * **Move Item Content** tool will allow you to move the map without moving the bounding box<br>
- ![Spatial Data Bootcamp: Show your Results in QGIS]({{BASE_PATH}}{{ASSET_PATH}}/images/carto-8.png)
- * Explore tools by hovering over the toolbar icon or go to <em>Menu Bar > Layout</em> to see the names of each layout tool.
-5. Add a legend:
- * <em>Menu Bar > Layout > Add Legend</em>
- * Notice how names and values are not appropriate for a final map. To open legend propertie, using the **Select/Move Item** tool: <em>Select the legend layer and notice the Item properties on the right</em><br>
- ![Spatial Data Bootcamp: Show your Results in QGIS]({{BASE_PATH}}{{ASSET_PATH}}/images/carto-9.png)
- * Item properties: Here you are able to change the title, select which legend to produce based on the map layer, modify legend item, etc. See the images below for the list of options.<br>
- ![Spatial Data Bootcamp: Show your Results in QGIS]({{BASE_PATH}}{{ASSET_PATH}}/images/carto-10.png)
- 6. Add a title:
- * add title
- 7. Add scale bar:
- * scale bar
- 8. Map info
- * map info
- 9. North arrow
- * <em>Menu Bar > Layout > Add image</em> then click area on map.
- * <em>Image item properties > Search directories > Locate North Arrow</em>
-10. Configure additional features
-11. Export map:
- * As Image, PDF, or SVG.<br>
- <img src="{{BASE_PATH}}{{ASSET_PATH}}/images/carto-final-map.jpg" style="border:1px solid black;" alt="Spatial Data Bootcamp: Show your Results in QGIS">
 
