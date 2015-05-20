@@ -30,6 +30,12 @@ img {
   max-width: 100%;
 }
 
+/* iframes in web-mapping.md */
+.leaflet, .openlayers, .d3 {
+  width: 100%;
+  height: 400px;
+}
+
 /* post headings */
 .head-left {
   float: left;

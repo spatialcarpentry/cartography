@@ -29,7 +29,7 @@ library or tool that facilitates the use of the Javascript language.
 
 > Leaflet is a modern open-source JavaScript library for mobile-friendly interactive maps. It is developed by Vladimir Agafonkin with a team of dedicated contributors. Weighing just about 33 KB of JS, it has all the features most developers ever need for online maps.
 
-<iframe class="leaflet" src="http://leafletjs.com/examples/choropleth-example.html" frameborder="0"></iframe>
+<iframe class="leaflet" src="http://leafletjs.com/examples/quick-start-example.html" frameborder="0"></iframe>
 
 ----
 
